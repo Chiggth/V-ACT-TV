@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f5f0">
+  <meta name="description" content="Không gian tự học Tiếng Việt V-ACT: lý thuyết chia chặng, ví dụ, ôn tập và lộ trình cá nhân.">
+  <title>V-ACT · Tiếng Việt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#home" aria-label="V-ACT Tiếng Việt, trang chủ"><span class="brand-mark">V.</span><span>V-ACT <small>TIẾNG VIỆT</small></span></a>
+    <div class="side-label">KHÔNG GIAN HỌC TẬP</div>
+    <nav class="primary-nav" aria-label="Điều hướng chính">
+      <button class="nav-link active" data-view="home"><span class="nav-icon">⌂</span> Tổng quan</button>
+      <button class="nav-link" data-view="lessons"><span class="nav-icon">▤</span> Lộ trình lý thuyết <span class="nav-count">08</span></button>
+      <button class="nav-link" data-view="review"><span class="nav-icon">↻</span> Ôn lại kiến thức</button>
+      <button class="nav-link" data-view="practice"><span class="nav-icon">✳</span> Bài tập AI <span class="soon">SẮP CÓ</span></button>
+    </nav>
+    <div class="side-progress">
+      <div class="side-label">TIẾN ĐỘ CỦA BẠN</div>
+      <div class="progress-row"><span id="side-progress-text">0 / 8 chặng</span><span id="side-progress-percent">0%</span></div>
+      <div class="progress-track"><i id="side-progress-bar"></i></div>
+      <p>Mỗi chặng nhỏ hôm nay là một bước gần hơn tới mục tiêu.</p>
+    </div>
+    <div class="sidebar-foot"><span class="gold-dot"></span> Học đều · Hiểu sâu · Nhớ lâu</div>
+  </aside>
+
+  <main class="main-shell">
+    <header class="topbar"><button class="menu-toggle" id="menu-toggle" aria-label="Mở menu">☰</button><div class="breadcrumbs">V-ACT <span>/</span> <b id="crumb">TỔNG QUAN</b></div><div class="top-actions"><span class="today-label">LỘ TRÌNH TỰ HỌC</span><span class="avatar">HV</span></div></header>
+    <div id="app" class="page-content"></div>
+    <footer class="footer"><span>V-ACT · TIẾNG VIỆT</span><span>NỘI DUNG TÓM LƯỢC TỪ 8 TẬP TÀI LIỆU PDF ĐƯỢC CUNG CẤP</span></footer>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="lessons.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
